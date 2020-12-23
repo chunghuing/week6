@@ -1,3 +1,21 @@
-@import "functions";
+// bootstrap
+@import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
-@import "bootstrap";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+//base
+@import "base/base";
+
+// components
+@import "components/button";
+@import "components/card";
+
+//layout
+@import "layout/layout";
+
+//Pages
+@import "pages/index";
+
+
+

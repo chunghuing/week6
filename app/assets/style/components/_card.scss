@@ -1,0 +1,34 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    .card-img-top {
+      object-fit: cover;
+      object-position:center;
+      
+    }
+    .card-header {
+      overflow: hidden;
+      position: relative;
+    }
+    .card-body {
+      padding-top: 2px;
+    }
+  }
+  
+  .card.sold-out {
+    .card-header::after {
+      content: 'Sold out';
+      color: #fff;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.3);
+      z-index: 10;
+    }
+  }
