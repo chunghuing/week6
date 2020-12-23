@@ -5,82 +5,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <title>D'Perfume | 香水</title>
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- all.css -->
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+      <div class="container-fluid container-md">
+        <h1 class="navbar-logo">
+          <a href="index.html">D'Perfume 香水電商網站</a>
+        </h1>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="products.html" class="nav-link h5 text-center py-3 py-md-2 mr-md-3">
+                <span class="material-icons">store</span>Product
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="login.html" class="nav-link h5 text-center py-3 py-md-2 mr-md-3">
+                <span class="material-icons">person</span>log in
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link h5 text-center py-3 py-md-2 mr-md-3">
+                <span class="material-icons">favorite</span>Wishlist
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link h5 text-center py-3 py-md-2">
+                <span class="material-icons">shopping_cart</span>Cart(3)
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     
-<div class="container">
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
+<!-- banner -->
+<section class="banner mb-7 bg-cover">
+    <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="col-12 col-md-5 offset-md-7 mb-3 text-white">
+                <h2 class="banner__title h1">Perfume your day</h2>
+                <p class="banner__text h4">A perfume is like a piece of clothing, a message, a way of presenting oneself
+                    a costume that according to the person who wears it.</p>
+            </div>
 
-    <footer class="footer">
-      footer
+            <div class="col-12 col-md-4 offset-md-7">
+                <a href="#" class="btn btn-outline-success btn-block rounded-pill custom-btn">Shop now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- directions -->
+<section class="mb-7 mb-md-9">
+    <ul class="container">
+        <li class="row no-gutters flex-row-reverse directions">
+            <div class="col-12 col-md-6">
+                <img class="directions__img directions__img--normal" data-aos="fade-up"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index2.jpg?raw=true"
+                    alt="">
+            </div>
+
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="directions__content" data-aos="fade-up" data-aos-duration="3000">
+                    <h3 class="h2 font-weight-bold">Gabrielle CHANEL</h3>
+                    <p class="h5">全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
+                    <a href="#" class="text-primary py-3 pr-3">查看更多</a>
+                </div>
+
+            </div>
+        </li>
+
+        <li class="row no-gutters directions">
+            <div class="col-12 col-md-6">
+                <img class="directions__img directions__img--normal" data-aos="fade-up"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index3.png?raw=true"
+                    alt="">
+            </div>
+
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="directions__content" data-aos="fade-up" data-aos-duration="3000">
+                    <h3 class="h2 font-weight-bold">Gabrielle CHANEL</h3>
+                    <p class="h5">全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
+                    <a href="#" class="text-primary py-3 pr-3">查看更多</a>
+                </div>
+
+            </div>
+        </li>
+
+        <li class="row no-gutters flex-row-reverse directions">
+            <div class="col-12 col-md-6">
+                <img class="directions__img directions__img--normal" data-aos="fade-up"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index4.jpg?raw=true"
+                    alt="">
+            </div>
+
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="directions__content" data-aos="fade-up" data-aos-duration="3000">
+                    <h3 class="h2 font-weight-bold">Gabrielle CHANEL</h3>
+                    <p class="h5">全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
+                    <a href="#" class="text-primary py-3 pr-3">查看更多</a>
+                </div>
+
+            </div>
+        </li>
+
+        <li class="row no-gutters directions">
+            <div class="col-12 col-md-6">
+                <img class="directions__img directions__img--lg" data-aos="fade-up"
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index5.jpg?raw=true"
+                    alt="">
+            </div>
+
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <ul class="directions__content d-lg-flex flex-column justify-content-around list-unstyled"
+                    data-aos="fade-up" data-aos-duration="3000">
+                    <li class="mb-4 mb-md-8 mt-2 mt-md-0">
+                        <h4 class="h4 font-weight-bold mb-1">1. <br>Levels of Preventive Maintenance Compliance</h4>
+                        <p>The core idea of preventative maintenance is the performance of proactive actions against
+                            unscheduled
+                            downtime in order to identify potential defects before they evolve into something more
+                            severe.</p>
+                    </li>
+                    <li class="mb-4 mb-md-8 mt-md-1">
+                        <h4 class="h4 font-weight-bold mb-1">2. <br>Percentage of Planned Maintenance</h4>
+                        <p>The planned maintenance percentage is the total planned maintenance time in your CMMS
+                            software over a
+                            date range over the total number of hours of a service performed by the technicians.</p>
+                    </li>
+                    <li class="mb-4 mb-md-9 mt-md-1">
+                        <h4 class="h4 font-weight-bold mb-1">3. <br>Critical percentage of planned maintenance</h4>
+                        <p>Calculating the critical percentage of planned maintenance will help you prioritize the most
+                            important
+                            operations that should be performed immediately.</p>
+                    </li>
+                    <a href="#" class="btn btn-outline-dark btn-block rounded-pill custom-btn">Plan a free online
+                        training</a>
+                </ul>
+
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- product -->
+<section class="product bg-light py-6 py-md-7 mb-7 mb-md-9">
+    <div class="container">
+        <ul class="row list-unstyled">
+            <li class="col-12 col-md-4 mb-6 mb-md-0" data-aos="fade-up" data-aos-delay="500">
+                <a href="#" class="card">
+                    <div class="card-header">
+                        <img class="product-img" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index6.jpg" alt="">
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Poppy & Barley</h4>
+                        <p class="card-text mb-1 mb-md-3">Jo Malone</p>
+                        <p class="card-text">NT$1,380
+                            <span class="ml-2 text-secondary text-through">NT$1,580</span>
+                        </p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="col-12 col-md-4 mb-6 mb-md-0" data-aos="fade-up" data-aos-delay="1000">
+                <a href="#" class="card">
+                    <div class="card-header">
+                        <img class="product-img" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index7.jpg" alt="">
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Body Wash</h4>
+                        <p class="card-text mb-1 mb-md-3">Curology</p>
+                        <p class="card-text">NT$1,580</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="1500">
+                <a href="#" class="card sold-out">
+                    <div class="card-header">
+                        <img class="product-img" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index8.jpg" alt="">
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title">Apple Cider Vinegar Capsule</h4>
+                        <p class="card-text mb-1 mb-md-3">Tonik</p>
+                        <p class="card-text">NT$1,580</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <footer class="bg-primary py-4">
+      <div class="container d-flex">
+        <div class="d-flex align-items-center">
+          <a href="#">
+            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite.png" alt="logo">
+          </a>
+
+          <p class="text-white font-size-sm ml-4">© 2020. All Rights Reserved.</p>
+        </div>
+
+        <ul class="nav ml-auto list-unstyled">
+          <li class="nav-item">
+            <a href="products.html" class="nav-link text-white h5">Product</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white h5">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white h5">Contact</a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
