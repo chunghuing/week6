@@ -4,11 +4,17 @@
     .card-img-top {
       object-fit: cover;
       object-position:center;
-      
     }
     .card-header {
       overflow: hidden;
       position: relative;
+    }
+    .card-title {
+      margin-bottom: 0;
+      font-size: 24px;
+      @include media-breakpoint-down(sm) {
+        font-size: 20px;
+      }
     }
     .card-body {
       padding-top: 2px;
