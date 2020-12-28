@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -12132,6 +12133,17 @@ p {
   position: relative;
 }
 
+.card .card-title {
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+@media (max-width: 767.98px) {
+  .card .card-title {
+    font-size: 20px;
+  }
+}
+
 .card .card-body {
   padding-top: 2px;
 }
@@ -12347,7 +12359,7 @@ p {
   background-color: transparent;
 }
 
-.product .product-img {
+.product .product-i-img {
   width: 100%;
   -o-object-position: bottom;
      object-position: bottom;
@@ -12355,9 +12367,75 @@ p {
 }
 
 @media (min-width: 768px) {
-  .product .product-img {
+  .product .product-i-img {
     height: 540px;
   }
+}
+
+.subscribe {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
+  height: 600px;
+  padding-top: 312px;
+}
+
+.subscribe__input {
+  border: 2px solid #916000;
+}
+
+.product-img {
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  height: 165px;
+}
+
+@media (min-width: 768px) {
+  .product-img {
+    height: 255px;
+  }
+}
+
+.card-header-hover {
+  position: relative;
+}
+
+.card-header-hover:before {
+  content: '查看更多';
+  position: absolute;
+  color: #fff;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  z-index: 1;
+}
+
+.card-header-hover:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  z-index: 0;
+}
+
+.card-header-hover:hover:before, .card-header-hover:hover:after {
+  opacity: 1;
+}
+
+.card-header-hover:hover:before {
+  top: 55%;
 }
 
 .subscribe {
