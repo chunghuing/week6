@@ -2,32 +2,79 @@
 .navbar {
     z-index: 99;
     transition: .5s;
+}
+.navbar-logo a {
+    width: 128px;
+    height: 38px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume.png?raw=true) no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
-    .navbar-logo a {
-        width: 128px;
-        height: 38px;
-        background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume.png?raw=true) no-repeat;
-        text-indent: 101%;
-        overflow: hidden;
-        white-space: nowrap;
+//Burger menu star
+.navbar-toggler {
+    padding: 0;
+    border: none;
+    &:focus {
+        outline: none;
     }
-
-    .navbar-collapse {
-        background-color: transparent;
-        @include media-breakpoint-down(sm) {
-            background-color: $secondary;
-        }
+    &-icon {
+        width: 40px;
+        height: 40px;
     }
+}
 
-    .nav-link {
-        line-height: 1.2;
-        @include media-breakpoint-down(sm) {
-            color: #fff;
-            border-bottom: 1px solid #fff;
-            &:hover {
-                background-color: $light;
-                color: $primary;
-            }
+.toggler-bar {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: $secondary;
+    border-radius: 10px;
+    transition: .2s;
+}
+.toggler-bar-top {
+    top: 5px;
+}
+.toggler-bar-middle {
+    top: 16px;
+}
+.toggler-bar-bottom {
+    top: 27px;
+}
+.toggler-bar-top-rotate {
+    top: 15px;
+    transform: rotate(45deg);
+}
+.toggler-bar-bottom-rotate {
+    top: 15px;
+    transform: rotate(-45deg);
+}
+//Burger menu end
+
+.navbar-collapse {
+    background-color: transparent;
+    @include media-breakpoint-only(sm) {
+        background-color: $secondary;
+    }
+    @include media-breakpoint-only(xs) {
+        background-color: $secondary;
+    }
+}
+
+.nav .nav-link, .navbar .nav-link {
+    line-height: 1.2;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    @media (max-width: 767.98px) {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        &:hover {
+            background-color: $light;
+            color: $primary;
         }
     }
 }
+

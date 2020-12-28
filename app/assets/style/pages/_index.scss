@@ -1,15 +1,25 @@
 //banner
 .banner {
-    height: calc(100vh - 64px);
+    height: 870px;
     background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true);
+
+    @include media-breakpoint-down(sm) {
+        height: calc(100vh - 56px);
+    }
     
     &__title {
+        @include media-breakpoint-down(lg) {
+          font-size: 40px;
+        }
         @include media-breakpoint-down(sm) {
-          font-size: 32px;
+            font-size: 32px;
         }
     }
 
     &__text {
+        @include media-breakpoint-down(lg) {
+            font-size: 24px;
+        }
         @include media-breakpoint-down(sm) {
             font-size: 20px;
         }
@@ -40,7 +50,8 @@
     .custom-btn {
         font-size: 20px;
     }
-    @include media-breakpoint-up(md) {
+
+    @include media-breakpoint-up(lg) {
         &__img {
             &--normal {
                 height: 555px;
@@ -68,5 +79,16 @@
         @include media-breakpoint-up(md) {
             height: 540px;
         }
+    }
+}
+
+//subscribe
+.subscribe {
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true');
+    height: 600px;
+    padding-top: 312px;
+
+    &__input {
+        border: 2px solid $primary;
     }
 }
