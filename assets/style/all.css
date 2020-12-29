@@ -12448,4 +12448,16 @@ p {
   border: 2px solid #916000;
 }
 
+@media (min-width: 768px) {
+  .position-md-absolute {
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) {
+  .right-md-0 {
+    right: 0;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
